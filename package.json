@@ -25,12 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jothi2702/SmartAppDemo.git"
+    "url": "http://github.com/jothi2702/SmartAppDemo.git"
   },
-  "author": "Steve Speicher <sspeiche@gmail.com>",
-  "license": "CC-BY-1.0",
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jothi2702/SmartAppDemo/issues"
+    "url": "http://github.com/jothi2702/SmartAppDemo/issues"
   },
-  "homepage": "https://github.com/jothi2702/SmartAppDemo"
+  "homepage": "http://github.com/jothi2702/SmartAppDemo"
 }
