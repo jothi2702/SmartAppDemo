@@ -1,13 +1,13 @@
 
 var express = require('express');
 
-var bodyParser = require(‘body-parser’);
+var bodyParser = require('body-parser');
 
 var app = express();
 
 app.use(bodyParser.json({
 
-limit: ‘1mb’
+limit: '1mb'
 
 }));
 
@@ -17,7 +17,7 @@ extended: false
 
 }));
 
-app.use(express.static(__dirname + ‘/public’));
+app.use(express.static(__dirname + '/public'));
 
 // {
 
@@ -35,21 +35,21 @@ app.use(express.static(__dirname + ‘/public’));
 
 var connections = {};
 
-app.get(‘/connect’, function(req, res, next) {
+app.get('/connect', function(req, res, next) {
 
-var token = “T-” + String(Math.random()).substring(2);
+var token = "T-" + String(Math.random()).substring(2);
 
 connections[token] = [];
 
 res.json({
 
-“token”: token
+"token": token
 
 });
 
 });
 
-app.get(‘/action’, function(req, res, next) {
+app.get('/action', function(req, res, next) {
 
 var token = req.query.token;
 
@@ -65,13 +65,13 @@ connections[token] = [];
 
 res.json({
 
-“actions”: actions
+"actions": actions
 
 });
 
 });
 
-app.post(‘/action’, function(req, res, next) {
+app.post('/action', function(req, res, next) {
 
 var token = req.body.token;
 
@@ -85,7 +85,7 @@ actions = connections[token];
 
 res.json({
 
-“actions”: actions
+"actions": actions
 
 });
 
@@ -93,7 +93,7 @@ res.json({
 
 res.json({
 
-“error”: “token is not found”
+"error": "token is not found"
 
 });
 
@@ -101,11 +101,11 @@ res.json({
 
 });
 
-app.use(‘/’, function(req, res, next) {
+app.use('/', function(req, res, next) {
 
 res.json({
 
-“nodejs express”: new Date().getTime()
+"nodejs express": new Date().getTime()
 
 });
 
