@@ -1,0 +1,20 @@
+ {
+    "name": "smartappdemo",
+    "description": "",
+    "version": "1.0.0",
+    "main": "server.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/jothi2702/smartappdemo.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/jothi2702/smartappdemo/issues"
+    },
+    "homepage": "https://github.com/jothi2702/smartappdemo"
+  }
